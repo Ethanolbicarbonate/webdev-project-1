@@ -1,0 +1,493 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: "TitleFont";
+    src: url("WarzoneRegular-1Grlj.ttf");
+  }
+
+.header{
+    height: 60px;
+    width: 100vw;
+    background-color: black;
+    position: fixed;
+    z-index: 100;
+    box-shadow: 0px 0px 40px rgb(0, 242, 255);
+    transition: 0.5s;
+}
+
+.header:hover{
+    box-shadow: 0px 0px 80px rgb(0, 255, 229);
+}
+
+.container{
+    background-image: url(indexsec1.png);
+    background-position: center;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    box-shadow: inset 0px -100px 80px #02111E;
+}
+
+.content{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    text-align: center;
+}
+
+.header img{
+    float: left;
+    padding: 15px 0px 0px 50px;
+    height: 28px;
+    width: auto;
+}
+
+.header h1{
+    float: left;
+    color: #fff;
+    font-size: 20px;
+    letter-spacing: 6px;
+    font-family: "TitleFont";
+    padding-top: 20px;
+    margin-left: 15px;
+}
+
+.header ul, .header li, .header a{
+    text-decoration: none;
+    list-style: none;
+    display: inline-block;
+    font-family: "Comfortaa", sans-serif;
+    color: white;
+    word-spacing: 50px;
+    letter-spacing: 2px;
+    font-size: 14px;
+}
+
+.header nav{
+    float: right;
+    align-self: inherit;
+    margin: 20px 50px 0px 0px;
+}
+
+.header li, a{
+    transition: 0.5s;
+}
+
+.header ul:hover li{
+    filter: opacity(50%);
+}
+
+.header ul li:hover{
+    filter: opacity(100%);
+}
+
+.header ul a:hover{
+    color: rgb(0, 255, 229);
+    font-size: 15px;
+}
+
+p{
+    font-family: "Comfortaa", sans-serif;
+    color: white;
+    font-size: 14px;
+}
+
+.titlebox{
+    background-color: rgba(11, 46, 65, 0.478);
+    margin-top: 80px;
+    border-radius: 64px;
+    padding: 40px;
+    border: 1px solid rgb(0, 242, 255);
+    padding: 40px;
+    position: relative;
+    z-index: 2;
+
+}
+  
+.titlebox p {
+    position: relative;
+    z-index: 1;
+    font-family: "TitleFont";
+    letter-spacing: 6px;
+    word-spacing: 2px;
+    font-weight: normal;
+    margin-top: 20px;
+    text-shadow: 0px 0px 20px rgb(0, 242, 255);;
+
+}
+
+.titlebox h1{
+    font-family: "TitleFont";
+    z-index: 1  ;
+    font-weight: bold;
+    font-size: 182px;
+    color: white;
+    letter-spacing: 40px;
+    margin-left:20px;
+    text-shadow: 0px 0px 20px rgb(0, 242, 255);;
+}
+  
+.titlebox:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('indexsec1.png');
+    filter: blur(20px);
+    border-radius: 64px;
+    z-index: -1;
+}
+
+.btn{
+    font-family: "TitleFont";
+    font-size: 14px;
+    padding: 20px;
+    background-color: rgba(34, 85, 112, 0.421);
+    box-shadow: 0px 0px 30px rgb(0, 242, 255);
+    color: white;
+    border: 1px solid rgb(0, 242, 255);
+    margin-top: 50px;
+    border-radius: 18px;
+    letter-spacing: 4px;
+}
+
+.btn{
+    transition: 0.5s;
+}
+.btn:hover{
+    background-color: rgba(0, 0, 0, 0.613);
+    box-shadow: 0px 0px 60px rgb(0, 255, 229);
+    font-size: 16px;
+    color: rgb(0, 242, 255);
+}
+
+.caption{
+    width: 100vw;
+    background-color: rgb(2, 17, 30);
+    text-align: center;
+}
+
+.caption2{
+    width: 100vw;
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+    padding-top: 80px;
+}
+
+.caption h1, .caption2 h1{
+    font-family: "TitleFont";
+    padding: 50px 0px 20px 0px;
+    color: white;
+    font-weight: normal;
+    font-size: 42px;
+    text-shadow: 0px 0px 6px rgb(0, 242, 255);;
+    word-spacing: 6px;
+    letter-spacing: 2px;
+}
+
+.caption p{
+    font-size: 14px;
+    letter-spacing: 2px;
+    word-spacing: 4px;
+    padding: 0px 50px 100px 50px;
+    line-height: 25px;
+}
+
+.caption2 p{
+    font-size: 14px;
+    letter-spacing: 2px;
+    word-spacing: 4px;
+    padding: 0px 50px 80px 50px;
+    line-height: 25px;
+}
+
+.s_container{
+    height: 600px;
+    width: 100vw;
+    background-image: url(indexsec2.png);
+    background-position: top;
+    background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+    grid-gap: 30px;
+    justify-content: space-evenly;
+    box-shadow: inset 0px -100px 80px #000000;
+}
+
+.box{
+    height: 300px;
+    width: 450px;
+    box-shadow: 0px 0px 30px rgba(0, 242, 255, 0.557);
+    transition: 0.5s;
+    text-align: center;
+    border-radius: 18px;
+    border: 1px solid rgb(0, 242, 255);
+}
+
+.box img{
+    height: 300px;
+    width: 450px;
+    border-radius: 18px;
+}
+
+.box h1{
+    font-family: "Comfortaa", sans-serif;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    font-size: 14px;
+    letter-spacing: 2px;
+    margin: 20px 0px 20px 0px;
+}
+
+.box p{
+    font-size: 12px;
+    text-shadow: none;
+    letter-spacing: 1px;
+    text-align: left;
+    word-spacing: 2px;
+    color: white;
+    line-height: 20px;  
+}
+
+.s_container:hover .box{
+    filter: opacity(50%);
+    scale: 95%;
+}
+
+.s_container .box:hover{
+    filter: opacity(100%);
+    box-shadow: 0px 0px 60px rgb(0, 255, 229, 0.557);
+    scale: 105%;
+}
+
+.s_container h1, p{
+    transition: 0.5s;
+}
+
+.s_container .box:hover h1{
+    color: rgb(0, 242, 255);
+    text-shadow: 0px 0px 6px rgb(0, 255, 229, 0.557);
+    font-size: 15px;
+}
+
+.s_container .box:hover p{
+    text-shadow: 0px 0px 6px rgb(0, 255, 229, 0.557);
+}
+
+.t_container{
+    height: 125vh;
+    width: 100vw;
+    background-image: url(indexsec3.png);
+    background-position: center;
+    background-size: cover;
+    box-shadow: inset 0px -100px 80px #000000;
+}
+
+.vbox{
+    margin-left: 80px;
+    display: flex;
+    grid-gap: 30px;
+    padding: 30px;
+    align-content: center;
+}
+
+.vboxdescription{
+    color: white;
+    margin-right: 80px;
+    border-radius: 18px;
+    border: 1px solid rgb(0, 242, 255);
+    background: rgba(0, 242, 255, 0.157);
+    padding-inline: 30px;
+    transition: 0.5s;
+    box-shadow: 0px 0px 8px rgba(0, 242, 255, 0.557);
+}
+
+.vboxdescription h1{
+    font-family: "titlefont";
+    font-size: 28px;
+    letter-spacing: 8px;
+    margin-top: 30px;
+}
+
+.vboxdescription p{
+    font-size: 12px;
+    letter-spacing: 1px;
+    text-align: left;
+    word-spacing: 2px;
+    line-height: 20px;  
+    margin-top: 20px;
+    text-align: justify;
+}
+
+.vboximg img{
+    width: 250px;
+    height: auto;
+    box-shadow: 0px 0px 30px rgba(0, 242, 255, 0.557);
+    transition: 0.5s;
+    text-align: center;
+    border-radius: 18px;
+    border: 1px solid rgb(0, 242, 255);
+    background: rgba(0, 242, 255, 0.401);
+}
+
+.vbox:hover .vboxdescription{
+    background: rgba(0, 0, 0, 0.8);
+    color: rgb(0, 242, 255);
+    text-shadow: 0px 0px 6px rgb(0, 255, 229, 0.557);
+    box-shadow: 0px 0px 20px rgb(0, 255, 229, 0.557);
+}
+
+.caption3{
+    color: white;
+    background-image: url(indexsec4.png);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    box-shadow: inset 0px 100px 150px #000000;
+    text-align: center;
+    line-height: 175px;
+    letter-spacing: 15px;
+    padding-top: 225px;
+
+}
+
+.caption3 h1{
+    font-family: "titlefont";
+    font-size: 182px;
+    text-shadow: 0px 0px 20px rgb(0, 242, 255);
+    transition: 0.5s;
+}
+
+.caption3 h2{
+    font-family: "Comfortaa", sans-serif;
+    font-size: 42px;
+    text-shadow: 0px 0px 20px rgb(0, 242, 255);
+}
+
+.caption3 h1:hover{
+    text-shadow: 0px 0px 60px rgb(255, 187, 0);
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    height: 200px;
+    width: 100vw;
+    box-shadow: 0px 0px 40px rgb(0, 242, 255);
+    transition: 0.5s;
+}
+
+footer:hover{
+    box-shadow: 0px 0px 80px rgb(0, 255, 229);
+}
+
+footer h1, footer a{
+    color: white;
+    text-decoration: none;
+}
+
+footer h1{
+    font-family: "titlefont";
+    font-size: 18px;
+    letter-spacing: 4px;
+    line-height: 25px;
+    font-weight: bold;
+}
+
+footer ul{
+    margin-top: 20px;
+    font-family: "Comfortaa", sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+footer img{
+    width: 40px;
+    height: auto;
+}
+
+.logosec, .gradsec, .undergradsec, .socials{
+    width: 25%;
+    height: 100px;
+    margin: 20px;
+}
+
+.logosec{
+    padding-left: 20px;
+    width: 30%;
+    justify-content: space-evenly;
+}
+
+.gradsec h1, .undergradsec h1, .socials h1{
+    margin-top: 8px;
+}
+
+.logosec ul{
+    display: flex;
+    margin-top: 40px;
+}
+
+.logosec li{
+    margin-right: 12px;
+}
+
+.logo{
+    display: flex;
+    justify-content: flex-start;
+    
+}
+
+.logo h1{
+    margin: 8px 0px 0px 15px;
+    font-size: 26px;
+}
+
+.socials{
+    width: 20%;
+}
+
+.socials ul{
+    display: flex;
+}
+
+.socials li{
+    margin-right: 20px;
+}
+
+.smolbtn{
+    font-family: "titlefont";
+    letter-spacing: 2px;
+    color: white;
+    background-color: black;
+    padding: 12px;
+    border-radius: 20px;
+    border: 2px solid white;
+}
+
+.socials img{
+    width: 20px;
+}
+
+/*para sa costumized nga scroll bar*/
+body::-webkit-scrollbar{
+    width: 12px;
+}
+
+body::-webkit-scrollbar-track{
+    background: black;
+}
+
+body::-webkit-scrollbar-thumb{
+    background-color: rgba(0, 255, 255, 0.605);
+    border-radius: 6px;
+    border: 4px solid black;
+}
